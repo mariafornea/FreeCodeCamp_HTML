@@ -14,8 +14,8 @@
     </header>
     <main>
       <form method="POST" action="https://hotel-feedback.freecodecamp.org">
-        <fieldset>
-          <legend>Personal Information</legend>
+        <fieldset> <!-- fieldset обводит весь текст внутри него в отдельную рамочку, выглядит более аккуратно-->
+          <legend>Personal Information</legend> <!-- название для отдельного блока fieldset-->
           <label for="full-name">Name (required):</label>
           <input type="text" id="full-name" name="name" placeholder="e.g., John Doe" required size="20">
 
@@ -29,7 +29,11 @@
             size="20"
           />
           <label for="age">Age (optional):</label>
-          <input type="number" name="age" id="age" min="3" max="100" />
+          <input type="number"
+                 name="age" 
+                 id="age" 
+                 min="3"
+                 max="100" />
         </fieldset>
 
         <fieldset>
