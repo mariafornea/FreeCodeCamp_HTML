@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Tell us about your coffee habits</h1>
+      <p id="description">Help us understand what drinks you prefer so we can improve our menu.</p>
+    </header>
+    <main>
+      <form 
+        id="survey-form" 
+        method="POST"
+        action="">
+        <fieldset>
+          <legend>We need a little more information about you</legend>
+          <label for="name" id="name-label">Name(important):</label><br>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="e. g., Lukas Neumann"
+            size="30"
+            required><br>
+          <label for="email" id="email-label">Email(important):</label><br>
+          <input 
+            type="email"
+            id="email"
+            name="email"
+            placeholder="youremail@gmail.com"
+            required><br>
+          <label for="number" id="number-label">Age:</label><br>
+          <input 
+            type="number"
+            id="number"
+            name="age"
+            min="16"
+            max="100"
+            placeholder="16"><br>
+        </fieldset>
+        <fieldset>
+          <legend>Let's learn more about your preferences:</legend>
+          <label for="dropdown" id="dropdown-label">Which coffee variations suit your taste?</label>
+          <select id="dropdown" name="coffee-strength">
+            <option value="strong">Strong (Ristretto, Espresso...)</option>
+            <option value="weak">Weak (Café au Lait, Americano...)
+          </select><br>
+          <p>Do you have lactose intolerance?</p>
+          <input
+            type="radio"
+            id="yes"
+            name="allergy"
+            value="yes">
+          <label for="yes">Yes</label>
+          <input
+            type="radio"
+            id="no"
+            name="allergy"
+            value="no">
+          <label for="no">No</label>
+        </fieldset>
+        <fieldset>
+          <legend>Let's choose your favorite coffee drinks</legend>
+          <input
+            type="checkbox"
+            id="espresso"
+            name="coffee-drinks"
+            value="espresso">
+          <label for="espresso">Espresso</label>
+          <input
+            type="checkbox"
+            id="ristretto"
+            name="coffee-drinks"
+            value="ristretto">
+          <label for="ristretto">Ristretto</label>
+          <input
+            type="checkbox"
+            id="americano"
+            name="coffee-drinks"
+            value="americano">
+          <label for="americano">Americano</label>
+          <input
+            type="checkbox"
+            id="macchiato"
+            name="coffee-drinks"
+            value="macchiato">
+          <label for="macchiato">Macchiato</label>
+          <input
+            type="checkbox"
+            id="flat-white"
+            name="coffee-drinks"
+            value="flat-white">
+          <label for="flat-white">Flat White</label>
+          <input
+            type="checkbox"
+            id="latte"
+            name="coffee-drinks"
+            value="latte">
+          <label for="latte">Latte</label>
+          <input
+            type="checkbox"
+            id="mocha"
+            name="coffee-drinks"
+            value="mocha">
+          <label for="mocha">Mocha</label>
+        </fieldset>
+        <label for="desire">What else would you like to see on our menu?</label>
+        <textarea 
+          id="desire"
+          cols="40"
+          rows="10"
+          name="desire">
+        </textarea><br>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
