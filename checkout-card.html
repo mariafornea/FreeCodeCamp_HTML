@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+  <h1>Checkout</h1>
+  <section>
+    <h2>Your Cart</h2>
+    <img 
+      src="https://live.staticflickr.com/5061/5882946737_948c6de5cf_b.jpg"
+      width="80%"
+      alt="Green antique sofa with ottoman">
+    <p>"Couch" by Glen Bledsoe is licensed under CC BY 2.0.</p>
+  </section>
+    
+  <section>
+    <h2>Payment Information</h2>
+    <form>
+      <label for="card-name">
+        Cardholder Name<span aria-hidden="true">*</span>
+      </label>
+      <input
+        id="card-name"
+        name="card-name"
+        type="text"
+        required> <br><br>
+      <label for="card-number">
+        Card Number<span aria-hidden="true">*</span>
+      </label>
+      <input
+        id="card-number"
+        name="card-number"
+        type="text"
+        aria-describedby="card-number-help"
+        required>
+      <p id="card-number-help">Enter the card number shown on the front of your card.</p>
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+</body>
